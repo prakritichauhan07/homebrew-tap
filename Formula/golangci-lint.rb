@@ -2,24 +2,24 @@
 class GolangciLint < Formula
   desc "Fast linters runner for Go."
   homepage "https://golangci.com"
-  version "1.32.0"
+  version "1.33.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.32.0/golangci-lint-1.32.0-darwin-amd64.tar.gz"
-    sha256 "b14692db28c09bd146378437c4bbf6cb6a7f886e9456683d67df4bf7a10dca68"
+    url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.33.0/golangci-lint-1.33.0-darwin-amd64.tar.gz"
+    sha256 "88a7c9ad774bf57c8e638c3bdba01f66f46c2e3c05e4ede01aee972e5c5a1624"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.32.0/golangci-lint-1.32.0-linux-amd64.tar.gz"
-      sha256 "113b08f60cdc30be7a051719efcc7941b3843b39edf6c7cdcc5187846312d9a9"
+      url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.33.0/golangci-lint-1.33.0-linux-amd64.tar.gz"
+      sha256 "fb6ace7b702626bbef16d72980dbf6c1b41a24b454d50e70074a92ab65b7436b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.32.0/golangci-lint-1.32.0-linux-arm64.tar.gz"
-        sha256 "309f5db92ac12749bbceaa8dc8c7dfb7ef827e833d832c8dbf4b789cc713988e"
+        url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.33.0/golangci-lint-1.33.0-linux-arm64.tar.gz"
+        sha256 "ef396caf30dc6fad1d72b7a5d2e72e2837cbe8114b7b7581b413193112dd42f2"
       else
-        url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.32.0/golangci-lint-1.32.0-linux-armv6.tar.gz"
-        sha256 "5ef3b2b0e77101d64c581da4bce08450ef191545fc34bb95fbb3c6b2b017c287"
+        url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.33.0/golangci-lint-1.33.0-linux-armv6.tar.gz"
+        sha256 "7c9cfba52a159f2e234e8fcf0d2d951b2013db1e303f548892dbefaafb383954"
       end
     end
   end
