@@ -7,19 +7,19 @@ class GolangciLint < Formula
 
   if OS.mac?
     url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.34.0/golangci-lint-1.34.0-darwin-amd64.tar.gz"
-    sha256 "3ffcfc6cce62188ca538e25bfdd4e3f7fe3a3daafe9473fe363aac5eed63b2f5"
+    sha256 "f7281060c6872d00dca03bd9939d8e5329dfc9ff89d3549de791fed390c3b0b1"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.34.0/golangci-lint-1.34.0-linux-amd64.tar.gz"
-      sha256 "1064d26c4df5d8dec84ad46fa40472d3e3b650c821443f5bc3867f6678aea185"
+      sha256 "5288d05e9477dceeacc6ebd44f347657bff06df8fc7f2b1c76c095934b3ce912"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.34.0/golangci-lint-1.34.0-linux-arm64.tar.gz"
-        sha256 "da1d9b03c80222a301347c8fa90b01cb40bdc8ff19811a5bf300ecb5090ade58"
+        sha256 "ecd9212075e8886d087874dbccd2fa96f768362ac07cfd587db34c1b008499ed"
       else
         url "https://github.com/prakritichauhan07/golangci-lint/releases/download/v1.34.0/golangci-lint-1.34.0-linux-armv6.tar.gz"
-        sha256 "c3a4bf02e3d6b4db888fa930a8bf8aacc9e3ca617d4b37ca109e2318ab2792a7"
+        sha256 "93dcdd4aa2d66dab14e3e5efb71bd6694c5b58d3568ee4b5a6c2984e6cddd16d"
       end
     end
   end
